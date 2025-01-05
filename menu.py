@@ -9,3 +9,13 @@ def menu():
     print('[7] Consultar professores efetivados')
     option = int(input('Informe a opção desejada:  '))
 menu() 
+
+import cadastro_alunos
+def opcoes():
+    option = menu()
+    while True:
+        match option:
+            case '1':
+                print(cadastro_alunos.cadastrar_alunos())
+        break
+opcoes()
