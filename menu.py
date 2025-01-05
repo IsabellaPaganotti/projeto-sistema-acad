@@ -18,9 +18,15 @@ def opcoes_principal():
         elif option == 2:
             import cadastro_professor
             cadastro_professor.cadastrar_professores()
+        elif option == 3:
+            import novadisc
+            novadisc.nova_disciplina()
         else:
             print("Opção inválida.")
         resposta = input("Deseja continuar no menu? (SIM/NÃO): ")
         if resposta.upper() != "SIM":
             break
 opcoes_principal()
+
+
+    
