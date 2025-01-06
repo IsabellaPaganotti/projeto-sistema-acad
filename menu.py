@@ -21,6 +21,9 @@ def opcoes_principal():
         elif option == 3:
             import novadisc
             novadisc.nova_disciplina()
+        elif option == 4:
+            import novaturma
+            novaturma.nova_turma()
         else:
             print("Opção inválida.")
         resposta = input("Deseja continuar no menu? (SIM/NÃO): ")
