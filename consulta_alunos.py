@@ -14,7 +14,7 @@ def consulta_de_alunos():
         print(f'Nome do aluno(a):  {fake.first_name()}')
         print(f'Sobrenome: {fake.last_name()}')
         print(f'Data de nascimento: {data_nascimento.strftime('%d/%m/%y')}')
-        print(f'{idade_desejada} anos')
+        print(f'Idade: {idade_desejada} anos')
         print(f' Sexo: {sexo}')
         print('-----DADOS ACADÊMICOS-----')
         print(f'Turma: {fake.random_element(turmas)}')
