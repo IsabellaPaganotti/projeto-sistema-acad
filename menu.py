@@ -24,6 +24,9 @@ def opcoes_principal():
         elif option == 4:
             import novaturma
             novaturma.nova_turma()
+        elif option == 5:
+            import consulta_alunos
+            consulta_alunos.consulta_de_alunos()
         else:
             print("Opção inválida.")
         resposta = input("Deseja continuar no menu? (SIM/NÃO): ")
