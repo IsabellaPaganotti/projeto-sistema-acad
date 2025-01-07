@@ -1,5 +1,6 @@
 
-import random
+from faker import Faker
+fake = Faker('pt_BR')
 
 def cadastrar_professores():
     print('-----Cadastro de professores-----')
@@ -12,7 +13,7 @@ def cadastrar_professores():
         sexo = str(input('Informe o sexo: '))
 
         print('-----Dados profissionais-----')
-        id = random.randint(10, 100)
+        id = fake.bothify(text='??####?')
         disciplina = str(input('Disciplina: '))
 
         print('-----Contato-----')
