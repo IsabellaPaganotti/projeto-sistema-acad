@@ -1,6 +1,7 @@
 import random
 
 def cadastrar_alunos():
+    import turma_aberta
     print('-----Cadastro de alunos-----')
     alunos = []
     while True:
@@ -30,8 +31,18 @@ def cadastrar_alunos():
             'Email': email,
             'Telefone': telefone
         }
+        
+        turmas = ['1° ano A', '1° ano B', '2° ano A', '2° ano B', '3° ano A', '3° ano B']
+        ano1A = {'alunos': turma}
+        ano1B ={'alunos': ' '}
+        ano2A = {'Alunos': ' '}
+        ano2B = {'Alunos': ' '}
+        ano3A = {'Alunos': ' '}
+        ano3B = {'Alunos': ' '} 
 
-        alunos.append(aluno)
+        if turma == '1° ano A':
+            turmas.append(turma)
+        print(ano1A)
         print('-----------------------------------')
         print('Aluno cadastrado com sucesso!')
         print(alunos)
