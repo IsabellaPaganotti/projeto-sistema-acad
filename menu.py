@@ -4,7 +4,7 @@ def menu():
     print('[2] Cadastro de professor')
     print('[3] Adicionar nova disciplina')
     print('[4] Adicionar nova turma')
-    print('[5] Consultar alunos matriculados')
+    print('[5] Consultar alunos cadastrados por turmas')
     print('[6] Consultar turmas abertas')
     print('[7] Consultar professores efetivados')
     return int(input('Informe a opção desejada: '))
@@ -25,11 +25,11 @@ def opcoes_principal():
             import novaturma
             novaturma.nova_turma()
         elif option == 5:
-            import consulta_alunos
-            consulta_alunos.consulta_de_alunos()
-        elif option == 6:
             import cadastro_alunos
             cadastro_alunos.visualizador()
+        elif option == 6:
+            import turma_aberta
+            turma_aberta.Visualizar_alunos_matriculados()
         elif option == 7:
             import consulta_professor
             consulta_professor.consulta_professores()
