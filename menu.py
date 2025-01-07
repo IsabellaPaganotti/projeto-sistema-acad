@@ -7,6 +7,7 @@ def menu():
     print('[5] Consultar alunos cadastrados por turmas')
     print('[6] Consultar turmas abertas')
     print('[7] Consultar professores efetivados')
+    print('[8] Consultar professores por disciplinas')
     return int(input('Informe a opção desejada: '))
 
 def opcoes_principal():
@@ -33,6 +34,9 @@ def opcoes_principal():
         elif option == 7: #consulta professores efetivados com biblioteca faker
             import consulta_professor
             consulta_professor.consulta_professores()
+        elif option == 8:
+            import prof_por_disc
+            prof_por_disc.visualizar_professor_por_disciplinas()
         else:
             print("Opção inválida.")
         resposta = input("Deseja continuar no menu? (SIM/NÃO): ")
