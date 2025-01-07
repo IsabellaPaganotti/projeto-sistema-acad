@@ -34,6 +34,7 @@ def opcoes_principal():
             print("Opção inválida.")
         resposta = input("Deseja continuar no menu? (SIM/NÃO): ")
         if resposta.upper() != "SIM":
+            print('Obrigada por utilizar nossos serviços!')
             break
 opcoes_principal()
 
