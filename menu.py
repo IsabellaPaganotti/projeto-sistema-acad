@@ -28,7 +28,7 @@ def opcoes_principal():
             import consulta_alunos
             consulta_alunos.consulta_de_alunos()
         elif option == 6:
-            cadastro_alunos.visualizador_turmas()
+            cadastro_alunos.visualizador()
         elif option == 7:
             import consulta_professor
             consulta_professor.consulta_professores()
