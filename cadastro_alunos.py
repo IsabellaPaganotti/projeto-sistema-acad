@@ -10,7 +10,7 @@ def cadastrar_alunos():
     while True:
         #informações pessoais
         print('-----Dados pessoais-----')
-        nome = str(input('Nome do aluno: '))
+        name = str(input('Nome do aluno: '))
         sobrenome = str(input('Sobrenome: '))
         idade = int(input('Idade: '))
         sexo = str(input('Sexo [Fem/Masc]: '))
@@ -18,7 +18,7 @@ def cadastrar_alunos():
         print('-----Dados acadêmicos-----')
         matricula = id
         turma = (input('Informe a turma: '))
-        aluno = {'Nome': nome, 'Sobrenome': sobrenome, 'Matricula': id}
+        aluno = {'Nome': name, 'Sobrenome': sobrenome, 'Matricula': id}
         turmas[turma].append(aluno)
         #informações para contato
         print('-----Contato-----')
@@ -28,7 +28,7 @@ def cadastrar_alunos():
         
         #dicionário para conferir dados do aluno
         aluno = {
-            'Nome': nome,
+            'Nome': name,
             'Sobrenome': sobrenome,
             'Idade': idade,
             'Sexo': sexo,
@@ -40,7 +40,7 @@ def cadastrar_alunos():
         }
       
         print('-----------------------------------')
-        print(f'aluno {nome} cadastrado com sucesso na turma {turma}')
+        print(f'aluno {name} cadastrado com sucesso na turma {turma}')
         resposta = input("Deseja cadastrar outro aluno? (SIM/NÃO): ")
         if resposta.upper() != "SIM":
             return
@@ -50,7 +50,7 @@ def visualizador():
     if turma in turmas:
         print(f'alunos na turma {turma}: ')
         for aluno in turmas[turma]:
-            print(f'Aluno(a): {aluno['nome']}, Matrícula: {aluno['matricula']}')
+            print(f'Aluno(a): {aluno['Nome']}, Matrícula: {aluno['Matricula']}')
     else:
         print('erro')
     return
