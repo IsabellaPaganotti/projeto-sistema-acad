@@ -7,7 +7,7 @@ sexo = perfil['sex']
 idade_desejada = fake.random_int(min=26, max=65)
 data_nascimento = date.today() - timedelta(days=idade_desejada*365)
 id = fake.bothify(text='#??###')
-
+#função com dados falsos para porfessores
 def consulta_professores():
     disciplinas = ['Português', 'Matemática', 'História', 'Geografia', 'Artes', 'Filosfia', 'Sociologia',
                    'Química', 'Biologia', 'Física', 'Ed.Física', 'Inglês']
